@@ -1,14 +1,11 @@
 // Palindrome checker function
 function isPalindrome(string) {
-    let reverseString = "";
-    for (let i = string.length - 1; i >= 0; i--) {
-        reverseString += string[i];
-    }
+    let reverseString = string.split("").reverse().join("")
     if (reverseString == string) {
         return ("Is a Palindrome")
-    } else {
-        return ("Is Not a Palindrome")
     }
+    return ("Is not a Palindrome")
+    
 }
 console.log(isPalindrome("racecar"))
 console.log(isPalindrome("Bonjour"))
@@ -22,3 +19,6 @@ function pow(base, exponent) {
     }
 }
 console.log(pow(5, 3))
+
+
+
